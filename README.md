@@ -1,10 +1,10 @@
-# Birds 🐦
+# Birds-QuintenMuyllaert 🐦
 
-This is the main repository to follow the course for 'Advanced fullstack development' - 3MCT.
+This is a fork to follow the course for 'Advanced fullstack development' - 3MCT.
 
 ## Table of contents
 
-- [Birds 🐦](#birds-)
+- [Birds 🐦](#Birds-QuintenMuyllaert)
   - [Table of contents](#table-of-contents)
   - [Getting started](#getting-started)
     - [Prerequisites](#prerequisites)
@@ -22,15 +22,40 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
+- [Node.js](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
 ### Installing
+
+```bash
+# Clone this repository
+git clone **repo url**
+
+# ( Optional ) switch to dev branch
+git checkout dev
+
+# Go into the repository
+cd **repo name**
+
+# Install dependencies
+npm install
+
+cd ./frontend && npm install
+
+# Run the app
+npm run dev
+```
 
 ## Contributing
 
-Please make a pull-request to the `develop` branch for changes. Link the request to the according issue.
+Fork the original repo and create a pull-request to the `develop` branch for changes. Link the request to the according issue.
 
 ## Authors
 
 Martijn Loth for MCT (mct.be).
+
+Quinten Muyllaert student 3MCT Next Web.
 
 ## License
 
