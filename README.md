@@ -1,10 +1,10 @@
-# Birds 🪶
+# Birds 🐦
 
 This is the main repository to follow the course for 'Advanced fullstack development' - 3MCT.
 
 ## Table of contents
 
-- [Birds 🪶](#birds-)
+- [Birds 🐦](#birds-)
   - [Table of contents](#table-of-contents)
   - [Getting started](#getting-started)
     - [Prerequisites](#prerequisites)
