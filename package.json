@@ -1,0 +1,20 @@
+{
+	"name": "birds-quintenmuyllaert",
+	"version": "1.0.0",
+	"description": "This is the main repository to follow the course for 'Advanced fullstack development' - 3MCT.",
+	"main": "index.js",
+	"scripts": {
+		"dev": "cd ./frontend && npm run dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/QuintenMuyllaert/Birds-QuintenMuyllaert.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/QuintenMuyllaert/Birds-QuintenMuyllaert/issues"
+	},
+	"homepage": "https://github.com/QuintenMuyllaert/Birds-QuintenMuyllaert#readme"
+}
