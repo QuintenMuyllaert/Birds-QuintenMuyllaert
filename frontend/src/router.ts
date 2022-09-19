@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory, Router, RouteRecordRaw } from "vue-router";
 
+/*
+// Sadly vite complains about dynamic imports.
+// It still works, but it's not ideal.
 const route = (name: "/" | string) => {
 	const nameLower = name.toLowerCase();
 	const path = nameLower === "root" ? "/" : `/${nameLower}`;
@@ -13,6 +16,20 @@ const route = (name: "/" | string) => {
 };
 
 const routes: RouteRecordRaw[] = [route("Root"), route("About")];
+*/
+
+const routes: RouteRecordRaw[] = [
+	{
+		path: "/",
+		name: "Root",
+		component: () => import("./pages/Root.vue"),
+	},
+	{
+		path: "/about",
+		name: "About",
+		component: () => import("./pages/About.vue"),
+	},
+];
 
 const router: Router = createRouter({
 	history: createWebHistory(),
