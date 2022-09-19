@@ -4,6 +4,7 @@
 	"description": "This is the main repository to follow the course for 'Advanced fullstack development' - 3MCT.",
 	"main": "index.js",
 	"scripts": {
+		"format": "prettier --write .",
 		"dev": "cd ./frontend && npm run dev"
 	},
 	"repository": {
@@ -16,5 +17,9 @@
 	"bugs": {
 		"url": "https://github.com/QuintenMuyllaert/Birds-QuintenMuyllaert/issues"
 	},
-	"homepage": "https://github.com/QuintenMuyllaert/Birds-QuintenMuyllaert#readme"
+	"homepage": "https://github.com/QuintenMuyllaert/Birds-QuintenMuyllaert#readme",
+	"devDependencies": {
+		"prettier": "^2.7.1",
+		"prettier-plugin-tailwindcss": "^0.1.13"
+	}
 }
