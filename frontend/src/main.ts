@@ -3,5 +3,10 @@ import App from "./App.vue";
 import "@unocss/reset/tailwind.css";
 import "uno.css";
 
+import router from "./router";
+
 const app: VueApp = createApp(App);
+
+app.use(router);
+
 app.mount("#app");
