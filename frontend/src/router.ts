@@ -61,6 +61,32 @@ const routes: RouteRecordRaw[] = [
 		name: "Observations",
 		component: () => import("./pages/Observations.vue"),
 	},
+	// Auth routes
+	{
+		path: "/auth/account",
+		name: "Account",
+		component: () => import("./pages/Auth/Account/index.vue"),
+	},
+	{
+		path: "/auth/forgot-password",
+		name: "ForgotPassword",
+		component: () => import("./pages/Auth/ForgotPassword/index.vue"),
+	},
+	{
+		path: "/auth/login",
+		name: "Login",
+		component: () => import("./pages/Auth/Login/index.vue"),
+	},
+	{
+		path: "/auth/register",
+		name: "Register",
+		component: () => import("./pages/Auth/Register/index.vue"),
+	},
+	{
+		path: "/auth/user",
+		name: "User",
+		component: () => import("./pages/Auth/User/index.vue"),
+	},
 ];
 
 // createWebHistory
