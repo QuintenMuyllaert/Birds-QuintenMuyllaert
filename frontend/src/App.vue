@@ -17,6 +17,13 @@
 }
 
 body {
-	padding-inline: 4rem;
+	min-width: 100vw;
+	min-height: 100vh;
+	display: grid;
+}
+
+div#app {
+	width: 100%;
+	height: 100%;
 }
 </style>
