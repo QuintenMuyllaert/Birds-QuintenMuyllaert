@@ -57,6 +57,11 @@ const routes: RouteRecordRaw[] = [
 		component: () => import("./pages/Observations/index.vue"),
 	},
 	// Auth routes
+	//redirect /auth to /auth/login
+	{
+		path: "/auth",
+		redirect: "/auth/login",
+	},
 	{
 		path: "/auth/account",
 		name: "Account",
