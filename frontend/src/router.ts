@@ -30,6 +30,37 @@ const routes: RouteRecordRaw[] = [
 		name: "NotFound",
 		component: () => import("./pages/NotFound.vue"),
 	},
+	// Page routes
+	{
+		path: "/about",
+		name: "About",
+		component: () => import("./pages/About.vue"),
+	},
+	{
+		path: "/birds",
+		name: "Birds",
+		component: () => import("./pages/Birds.vue"),
+	},
+	{
+		path: "/home",
+		name: "Home",
+		component: () => import("./pages/Home.vue"),
+	},
+	{
+		path: "/locations",
+		name: "Locations",
+		component: () => import("./pages/Locations.vue"),
+	},
+	{
+		path: "/log",
+		name: "Log",
+		component: () => import("./pages/Log.vue"),
+	},
+	{
+		path: "/Observations",
+		name: "Observations",
+		component: () => import("./pages/Observations.vue"),
+	},
 ];
 
 // createWebHistory
