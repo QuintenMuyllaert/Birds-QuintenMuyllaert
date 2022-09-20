@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, Router, RouteRecordRaw } from "vue-router";
+import { createRouter, createWebHistory, createWebHashHistory, Router, RouteRecordRaw } from "vue-router";
 
 /*
 // Sadly vite complains about dynamic imports.
@@ -31,8 +31,14 @@ const routes: RouteRecordRaw[] = [
 	},
 ];
 
+// createWebHistory
+// Root => localhost:3000/ & About => localhost:3000/about
+
+// createWebHashHistory
+// Root => localhost:3000/#/  & About => localhost:3000/#/about
+
 const router: Router = createRouter({
-	history: createWebHistory(),
+	history: createWebHistory(), // either use createWebHistory or createWebHashHistory.
 	routes,
 });
 
