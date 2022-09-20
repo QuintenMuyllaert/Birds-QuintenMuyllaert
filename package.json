@@ -20,6 +20,7 @@
 	"homepage": "https://github.com/QuintenMuyllaert/Birds-QuintenMuyllaert#readme",
 	"devDependencies": {
 		"prettier": "^2.7.1",
-		"prettier-plugin-tailwindcss": "^0.1.13"
+		"prettier-plugin-tailwindcss": "^0.1.13",
+		"sass": "^1.54.9"
 	}
 }
