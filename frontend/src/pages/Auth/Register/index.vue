@@ -1,9 +1,51 @@
 <script lang="ts">
 import Inputfield from "../../../components/ui/Inputfield.vue";
 
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../../firebase";
+
+let email: string = "";
+let password: string = "";
+let confirmPassword: string = "";
+
+const onClickRegister = (e: Event) => {
+	e.preventDefault();
+	console.log("register");
+
+	if (password !== confirmPassword) {
+		alert("Passwords do not match");
+		return;
+	}
+
+	createUserWithEmailAndPassword(auth, email, password)
+		.then((userCredential) => {
+			// Signed in
+			const user = userCredential.user;
+			console.log("success", { user });
+		})
+		.catch((error) => {
+			const errorCode = error.code;
+			const errorMessage = error.message;
+			console.log("error", errorCode, errorMessage);
+			alert(errorMessage);
+		});
+};
+
 export default {
 	components: {
 		Inputfield,
+	},
+	methods: {
+		onClickRegister,
+		onChangeEmail(e: string) {
+			email = e;
+		},
+		onChangePassword(e: string) {
+			password = e;
+		},
+		onChangeConfirmPassword(e: string) {
+			confirmPassword = e;
+		},
 	},
 };
 </script>
@@ -13,11 +55,10 @@ export default {
 		<h1>Register</h1>
 		<form>
 			<main>
-				<Inputfield label="Email" placeholder="john.doe@example.com" type="email" />
-				<Inputfield label="Username" placeholder="John Doe" />
-				<Inputfield label="Password" type="password" />
-				<Inputfield label="Confirm Password" type="password" />
-				<button type="submit">Register</button>
+				<Inputfield label="Email" placeholder="john.doe@example.com" type="email" @input="onChangeEmail" />
+				<Inputfield label="Password" type="password" @input="onChangePassword" />
+				<Inputfield label="Confirm Password" type="password" @input="onChangeConfirmPassword" />
+				<button type="submit" @click="onClickRegister">Register</button>
 			</main>
 		</form>
 	</div>
