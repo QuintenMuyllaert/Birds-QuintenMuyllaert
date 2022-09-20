@@ -25,11 +25,6 @@ const routes: RouteRecordRaw[] = [
 		component: () => import("./pages/Root.vue"),
 	},
 	{
-		path: "/about",
-		name: "About",
-		component: () => import("./pages/About.vue"),
-	},
-	{
 		//create 404 error page
 		path: "/:pathMatch(.*)*",
 		name: "NotFound",
