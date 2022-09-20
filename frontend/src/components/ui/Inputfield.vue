@@ -31,12 +31,19 @@ export default defineComponent({
 			id: randomId(),
 		};
 	},
+	methods: {
+		onChangeInput(e: Event) {
+			const target = e.target as HTMLInputElement;
+			const value = target.value;
+			this.$emit("input", value);
+		},
+	},
 });
 </script>
 
 <template>
 	<div>
-		<input :id="id" :type="type" :value="value" :placeholder="placeholder" />
+		<input :id="id" :type="type" :value="value" :placeholder="placeholder" @change="onChangeInput" />
 		<label :for="id">{{ label }}</label>
 	</div>
 </template>
