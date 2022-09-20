@@ -76,12 +76,14 @@ export default {
 form {
 	display: grid;
 	place-items: center;
+	width: min(100%, 20rem);
 }
 
 main {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
+	width: 100%;
 }
 
 button {
