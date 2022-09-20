@@ -29,6 +29,12 @@ const routes: RouteRecordRaw[] = [
 		name: "About",
 		component: () => import("./pages/About.vue"),
 	},
+	{
+		//create 404 error page
+		path: "/:pathMatch(.*)*",
+		name: "NotFound",
+		component: () => import("./pages/NotFound.vue"),
+	},
 ];
 
 // createWebHistory
