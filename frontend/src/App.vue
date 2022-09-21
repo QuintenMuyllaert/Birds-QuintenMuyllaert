@@ -26,4 +26,23 @@ div#app {
 	width: 100%;
 	height: 100%;
 }
+
+//if mobile media query
+@media (max-width: 768px) {
+	.desktop {
+		visibility: hidden !important;
+		height: 0px !important;
+		padding: 0px !important;
+		overflow: hidden !important;
+	}
+}
+//else media query
+@media (min-width: 769px) {
+	.mobile {
+		visibility: hidden !important;
+		height: 0px !important;
+		padding: 0px !important;
+		overflow: hidden !important;
+	}
+}
 </style>
