@@ -4,54 +4,64 @@ export default {};
 
 <template>
 	<div class="main-grid">
-		<nav class="desktop">
-			<img src="/android-chrome-512x512.png" alt="Birds Logo" />
-			<div class="empty"></div>
-			<ul class="">
-				<li>
-					<a href="/home">Home</a>
-				</li>
-				<li>
-					<a href="/birds">Birds</a>
-				</li>
-				<li>
-					<a href="/logbook">Logbook</a>
-				</li>
-				<li>
-					<a href="/observations">Observations</a>
-				</li>
-				<li>
-					<a href="/contact">Quinten</a>
-				</li>
-			</ul>
-		</nav>
+		<div>
+			<nav class="desktop">
+				<img src="/android-chrome-512x512.png" alt="Birds Logo" />
+				<div class="empty"></div>
+				<ul class="">
+					<li>
+						<a href="/home">Home</a>
+					</li>
+					<li>
+						<a href="/birds">Birds</a>
+					</li>
+					<li>
+						<a href="/logbook">Logbook</a>
+					</li>
+					<li>
+						<a href="/observations">Observations</a>
+					</li>
+					<li>
+						<a href="/contact">Quinten</a>
+					</li>
+				</ul>
+			</nav>
+			<header class="mobile">
+				<img src="/android-chrome-512x512.png" alt="Birds Logo" />
+			</header>
+		</div>
 
 		<main><h1>Home</h1></main>
 
-		<nav class="mobile">
-			<ul>
-				<li>
-					<a href="/home">
-						<img src="/ico/home.svg" alt="home" />
-					</a>
-				</li>
-				<li>
-					<a href="/birds">
-						<img src="/ico/feather.svg" alt="birds" />
-					</a>
-				</li>
-				<li>
-					<a href="/logbook">
-						<img src="/ico/clipboard.svg" alt="logbook" />
-					</a>
-				</li>
-				<li>
-					<a href="/observations">
-						<img src="/ico/scroll.svg" alt="observations" />
-					</a>
-				</li>
-			</ul>
-		</nav>
+		<div>
+			<nav class="mobile">
+				<ul>
+					<li>
+						<a href="/home">
+							<img src="/ico/home.svg" alt="home" />
+						</a>
+					</li>
+					<li>
+						<a href="/birds">
+							<img src="/ico/feather.svg" alt="birds" />
+						</a>
+					</li>
+					<li>
+						<a href="/logbook">
+							<img src="/ico/clipboard.svg" alt="logbook" />
+						</a>
+					</li>
+					<li>
+						<a href="/observations">
+							<img src="/ico/scroll.svg" alt="observations" />
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<footer class="desktop">
+				<p>© 2021 Quinten Muyllaert</p>
+			</footer>
+		</div>
 	</div>
 </template>
 
@@ -108,6 +118,16 @@ nav.desktop {
 		font-family: din-condensed, sans-serif;
 		font-weight: 400;
 		font-style: normal;
+	}
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	img {
+		height: 3rem;
 	}
 }
 </style>
