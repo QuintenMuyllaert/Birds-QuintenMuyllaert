@@ -9,9 +9,8 @@
 	],
 	"scripts": {
 		"format": "prettier --write .",
-		"i": "npm install && npm install -w frontend && npm install -w backend",
-		"dev": "npm run dev -w frontend",
-		"api": "npm run start:dev -w backend"
+		"start": "start npm run dev & npm run api",
+		"dev": "concurrently \"npm run dev -w frontend\" \"npm run start:dev -w backend\""
 	},
 	"repository": {
 		"type": "git",
@@ -25,6 +24,7 @@
 	},
 	"homepage": "https://github.com/QuintenMuyllaert/Birds-QuintenMuyllaert#readme",
 	"devDependencies": {
+		"concurrently": "^7.4.0",
 		"prettier": "^2.7.1",
 		"prettier-plugin-tailwindcss": "^0.1.13",
 		"sass": "^1.54.9"
