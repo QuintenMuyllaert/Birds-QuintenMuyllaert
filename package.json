@@ -3,9 +3,15 @@
 	"version": "1.0.0",
 	"description": "This is the main repository to follow the course for 'Advanced fullstack development' - 3MCT.",
 	"main": "index.js",
+	"workspaces": [
+		"frontend",
+		"backend"
+	],
 	"scripts": {
 		"format": "prettier --write .",
-		"dev": "cd ./frontend && npm run dev"
+		"i": "npm install && npm install -w frontend && npm install -w backend",
+		"dev": "npm run dev -w frontend",
+		"api": "npm run start:dev -w backend"
 	},
 	"repository": {
 		"type": "git",
